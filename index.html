@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>piggy bank </title>
+    <link rel="stlesheet" href="index.css">
+</head>
+<body>
+    <div id="initialScreen">
+        <h1>Welcome to the Piggy Bank System</h1>
+        <button onclick="showPiggyBank()">Start Saving</button>
+    </div>
+    
+    <!-- Second Screen -->
+    <div class="container" id="piggyBank">
+        <h1>Piggy Bank System</h1>
+        <label for="nameInput">Enter Your Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <label for="amountInput">Enter Amount:</label>
+        <input type="number" id="amountInput" placeholder="Enter amount">
+        <button id="saveButton" onclick="saveMoney()">Save</button>
+        <button id="withdrawButton" onclick="withdrawMoney()">Withdraw</button>
+        <div id="totalAmount">Total Amount: $0</div>
+        <button id="breakButton" onclick="breakPiggyBank()">Break Piggy Bank</button>
+    </div>
+    
+    <!-- Third Screen -->
+    <div class="container" id="finalScreen">
+        <h1>Congratulations!</h1>
+        <p>Total Transactions: <span id="transactionCount">0</span></p>
+        <p>Total Amount Saved: $<span id="finalAmount">0</span></p>
+    </div>
+    <script src="index.js"></script>
+    
+</body>
+</html>
